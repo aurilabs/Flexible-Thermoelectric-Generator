@@ -17,7 +17,7 @@ The primary objective of this research is to study and model phonon scattering p
 ## Current Focus
 Currently focused on theoretical modeling and establishing the mathematical framework for percolation thresholds in non-conductive matrices.
 
-------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
 TR:
 # Auri Labs: Katı Hal Termoelektrik Kompozitleri Ar-Ge
 
