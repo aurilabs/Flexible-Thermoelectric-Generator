@@ -6,6 +6,15 @@ While it successfully simulates the power-law spike in electrical conductivity p
 it utilizes a simplified linear mixing rule for thermal conductivity. By excluding the electronic thermal conductivity component (Wiedemann-Franz effect), 
 **this version predicts an artificially high ZT at large volume fractions.** It serves as a foundational baseline for understanding the core electrical mechanism.
 
+### Key Physics Addressed:
+* **Percolation Theory:** Simulating the critical threshold ($\Phi_c$) where nanowires form a continuous conductive network inside the insulating/semi-conducting polymer matrix.
+* **Power Law Conductivity:** Utilizing the universal scaling law for 3D networks to calculate electrical conductivity post-percolation.
+* **Thermoelectric Efficiency:** Calculating the resulting $ZT$ value at room temperature (300K) using the Seebeck coefficient, electrical conductivity, and thermal conductivity mix.
+
+### 🛠️ Upcoming Phases
+- Implementing non-linear thermal conductivity spikes post-percolation.
+- Exporting optimized material parameters to **COMSOL Multiphysics** for Heat Transfer and multiphysics modeling of cylindrical geometries.
+
 ## V2
 V2: Wiedemann-Franz Correction
 
@@ -23,6 +32,15 @@ Because pure analytical mathematics cannot account for these physical defects, t
 V1: Doğrusal Termal Yaklaşım ve Sızma Eşiği (Linear Thermal Approximation & Percolation Threshold)Bu ilk analitik model, PEDOT:PSS polimer matrisi içindeki Ag2Se nanotellerinin elektriksel sızma eşiğini (percolation threshold - $\Phi_c$) hesaplamaya odaklanmaktadır.
 
 Model, hacim kesri arttıkça elektriksel iletkenlikteki üstel (power-law) artışı başarılı bir şekilde simüle ederken, termal iletkenliği basitleştirilmiş bir doğrusal karışım kuralı ile ele almaktadır. Elektronik termal iletkenliğin (Wiedemann-Franz etkisi) göz ardı edilmesi nedeniyle, bu versiyon yüksek hacim kesirlerinde teorik sınırların ötesinde bir ZT değeri öngörmektedir. Temel mekanizmayı anlamak için oluşturulmuş bir referans noktasıdır.
+
+### Ele Alınan Temel Fizik:
+* **Süzme Teorisi:** Nanotellerin yalıtkan/yarı iletken polimer matris içinde sürekli bir iletken ağ oluşturduğu kritik eşiğin ($\Phi_c$) simüle edilmesi.
+* **Güç Yasası İletkenliği:** Süzme sonrası elektriksel iletkenliği hesaplamak için 3D ağlar için evrensel ölçeklendirme yasasını kullanma.
+* **Termoelektrik Verimlilik:** Oda sıcaklığında (300K) elde edilen $ZT$ değerinin Seebeck katsayısı, elektriksel iletkenlik ve termal iletkenlik karışımı kullanılarak hesaplanması.
+
+### 🛠️ Yaklaşan Aşamalar
+- Süzme sonrasında doğrusal olmayan termal iletkenlik artışlarının uygulanması.
+- Isı Transferi ve silindirik geometrilerin çoklu fizik modellemesi için optimize edilmiş malzeme parametrelerinin **COMSOL Multiphysics**'e aktarılması.
 
 ## V2
 V2: Wiedemann-Franz Düzeltmesi (Wiedemann-Franz Correction)
